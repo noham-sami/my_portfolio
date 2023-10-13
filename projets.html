@@ -9,6 +9,8 @@
 </head>
 <body>
 <h1>PROJETS RÉALISÉS</h1>
+<a href="index.html" class="btn-retour">Accueil</a>
+
 
 <div class="boxes">
 
@@ -35,14 +37,14 @@
     <span>3</span>
     <img src="img/img_1.png"/>
     <div class="info">FAST</div>
-    <a href=" " target="_blank" class="btn-voir" style="white-space: pre; text-decoration: none;">+ info</a>
+    <a href="https://drive.google.com/file/d/1uEosuh5ZWL7XSp-k3hRLH8KnkVtvMPr0/view?usp=share_link " target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
   </div>
 
   <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e02d9194aa18fa4c9362b47464f)">
     <span>4</span>
     <img src="img/img_2.png"/>
     <div class="info">Station Météo</div>
-    <a href="https://drive.google.com/file/d/1LKgxtx0U4um6UNInOyfrk5sDm7mlujr5/view" target="_blank" class="btn-voir" style="white-space: pre; text-decoration: none;">+ info</a>
+    <a href="https://drive.google.com/file/d/1LKgxtx0U4um6UNInOyfrk5sDm7mlujr5/view" target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
   </div>
 
   <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e02d9194aa18fa4c9362b47464f)">
@@ -56,16 +58,33 @@
 
   <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e02d9194aa18fa4c9362b47464f)">
     <span>6</span>
-    <img src="img/siteWeb2.png"/>
+    <img src="img/site2.png"/>
     <div class="info">Ce site web</div>
     <a class="btn-voir" data-info="Puisqu'un CV ne dit pas tout sur les compétences et le travail d'une personne, j'ai décidé de présenter mon savoir-faire à travers ce site Web, considéré comme un portfolio.
     Vous pouvez découvrir davantage sur mes compétences et réalisations en parcourant ce site."
        style="white-space: pre;text-decoration: none;">+ info</a>
   </div>
 
-  <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e029bbd79106e510d13a9a5ec33)"><span>8</span><img src="https://i.scdn.co/image/ab67616d00001e029bbd79106e510d13a9a5ec33"/></div>
-  <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e021d97ca7376f835055f828139)"><span>9</span><img src="https://i.scdn.co/image/ab67616d00001e021d97ca7376f835055f828139"/></div>
-  <div class="box" style="--src: url(https://www.udiscovermusic.com/wp-content/uploads/2015/10/Kanye-West-Yeezus.jpg)"><span>10</span><img src="https://www.udiscovermusic.com/wp-content/uploads/2015/10/Kanye-West-Yeezus.jpg"/></div>
+  <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e029bbd79106e510d13a9a5ec33)">
+    <span>7</span>
+    <img src="img/cadessens.PNG"/>
+    <div class="info">Cadessens</div>
+    <a href="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link" target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
+  </div>
+
+  <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e021d97ca7376f835055f828139)">
+    <span>8</span>
+    <img src="img/tabInter.png"/>
+    <div class="info">Tableau d'intervention</div>
+    <a href="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link" target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
+  </div>
+
+  <div class="box" style="--src: url(https://www.udiscovermusic.com/wp-content/uploads/2015/10/Kanye-West-Yeezus.jpg)">
+    <span>9</span>
+    <img src="img/IA.jpg"/>
+    <div class="info">Début de dev IA</div>
+    <a href="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link" target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
+  </div>
 
   <div class="controls">
     <button class="next"><span>Previous album</span>
@@ -80,40 +99,45 @@
     </button>
   </div>
 </div>
-<svg class="scroll-icon" viewBox="0 0 24 24">
-  <path fill="#03dac6" d="M20 6H23L19 2L15 6H18V18H15L19 22L23 18H20V6M9 3.09C11.83 3.57 14 6.04 14 9H9V3.09M14 11V15C14 18.3 11.3 21 8 21S2 18.3 2 15V11H14M7 9H2C2 6.04 4.17 3.57 7 3.09V9Z"></path>
-</svg>
-<div class="drag-proxy"></div>
+
 <!-- partial -->
   <script type="module" src="js/projets.js"></script>
 
 <script>
   let boxes = document.querySelectorAll('.box');
-  let btnVoir;
 
   boxes.forEach((box) => {
     box.addEventListener('mouseover', function() {
-      btnVoir = box.querySelector('.btn-voir');
+      let btnVoir = box.querySelector('.btn-voir');
+      let btnVoir2 = box.querySelector('.btn-voir2');
       if (btnVoir) {
         btnVoir.style.display = 'block';
+      }
+      if (btnVoir2) {
+        btnVoir2.style.display = 'block';
       }
     });
 
     box.addEventListener('mouseout', function() {
-      btnVoir = box.querySelector('.btn-voir');
+      let btnVoir = box.querySelector('.btn-voir');
+      let btnVoir2 = box.querySelector('.btn-voir2');
       if (btnVoir) {
         btnVoir.style.display = 'none';
+      }
+      if (btnVoir2) {
+        btnVoir2.style.display = 'none';
       }
     });
 
     box.addEventListener('click', function(e) {
-      e.preventDefault();
-      btnVoir = box.querySelector('.btn-voir');
-      if (btnVoir) {
+      let btnVoir = box.querySelector('.btn-voir');
+      if (btnVoir && e.target.classList.contains('btn-voir')) {
+        e.preventDefault();
         alert(btnVoir.getAttribute('data-info'));
       }
     });
   });
+
 </script>
 
 </body>

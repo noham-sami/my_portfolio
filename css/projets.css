@@ -219,7 +219,7 @@ button path {
 }
 
 
-.btn-voir {
+.btn-voir, .btn-voir2 {
   display:none;
   font-size: 75%;
   position: absolute;
@@ -236,7 +236,32 @@ button path {
   transition: background-color 0.3s ease;
 }
 
-.btn-voir:hover {
+.btn-voir:hover , .btn-voir2:hover{
+  cursor: pointer;
+  border-color: #ff0266;
+  color: #ff0266;
+}
+
+.btn-retour{
+  text-decoration: none;
+  font-size: 100%;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  background-color: #1e1f26;
+  color: #03dac6;
+  border: solid 2px;
+  border-color: #03dac6;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-retour:hover {
   cursor: pointer;
   border-color: #ff0266;
   color: #ff0266;
