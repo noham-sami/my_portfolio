@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <title>Projets Réalisés</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="css/projets.css">
+  <link rel="stylesheet" href="css/projets.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+
+  <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
+" rel="stylesheet">
 
 </head>
 <body>
 <h1>PROJETS RÉALISÉS</h1>
 <a href="index.html" class="btn-retour">Accueil</a>
-
 
 <div class="boxes">
 
@@ -18,9 +22,11 @@
     <span>1</span>
     <img src="img/ADR.png"/>
     <div class="info">Les Aventuriers Du Rail</div>
-    <a class="btn-voir" data-info="Ce projet consiste à créer une version informatique du jeu de société 'Les Aventuriers du Rail' en utilisant le langage de programmation Java.
-    Cela implique la compréhension des règles du jeu, la modélisation de ses composants, tels que les cartes et les pièces, ainsi que la mise en œuvre de la logique de jeu pour permettre aux joueurs d'interagir avec l'application.
-    En somme, j'ai transformé un jeu de société physique en un jeu vidéo interactif."
+    <a class="btn-voir"
+       data-title="Les Aventuriers Du Rail"
+       data-image="img/ADR.png"
+       data-text="Dans le cadre de ce projet, j'ai élaboré une adaptation numérique du jeu de société 'Les Aventuriers du Rail' en utilisant Java comme langage de programmation. <br><br>
+        Ce processus a nécessité une analyse approfondie des règles du jeu, une modélisation soignée de ses éléments, tels que les cartes et les pièces, et la conception d'une logique de jeu interactive pour permettre aux joueurs d'interagir avec le jeu."
        style="white-space: pre;text-decoration: none;">+ info</a>
   </div>
 
@@ -28,8 +34,11 @@
     <span><br></span>
     <img src="img/FB.png"/>
     <div class="info">Falling Blox</div>
-    <a class="btn-voir" data-info="'Falling Blox' est le résultat de mon projet où j'ai recréé le jeu classique Tetris en utilisant le langage de programmation Java.
-    Inspiré par le jeu original, les joueurs peuvent manipuler les blocs tombants en les déplaçant latéralement, à l'aide de la souris ou du clavier, et en les faisant pivoter pour former des lignes complètes."
+    <a class="btn-voir"
+       data-title="Falling Blox"
+       data-image="img/FB.png"
+       data-text="'Falling Blox' est le résultat de mon projet dans lequel j'ai recréé le jeu classique Tetris en utilisant le langage de programmation Java avec JUnit pour les tests. <br><br>
+       Inspiré du jeu original, les joueurs peuvent manipuler les blocs tombants en les déplaçant latéralement à l'aide de la souris et en les faisant pivoter afin de former des lignes complètes."
        style="white-space: pre;text-decoration: none;">+ info</a>
   </div>
 
@@ -37,21 +46,36 @@
     <span>3</span>
     <img src="img/img_1.png"/>
     <div class="info">FAST</div>
-    <a href="https://drive.google.com/file/d/1uEosuh5ZWL7XSp-k3hRLH8KnkVtvMPr0/view?usp=share_link " target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
+    <a class="btn-voir2"
+       data-title="FAST"
+       data-image="img/img_1.png"
+       data-text="Le but final du projet FAST est de devenir un véhicule de reconnaissance ou de secours dans des lieux difficiles d'accès. <br> <br>
+         Ce prototype pouvait être contrôlé par Bluetooth à l'aide d'un smartphone. Il était capable de rouler sur le dos et sur le ventre grâce à ses 4 roues motrices, et il a été codé en Arduino.<br><br>
+        <i>Vous pouvez retrouver mon rapport en cliquant sur le lien ci-dessous.</i>"
+       data-url="https://drive.google.com/file/d/1uEosuh5ZWL7XSp-k3hRLH8KnkVtvMPr0/view?usp=share_link">+ info</a>
   </div>
 
   <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e02d9194aa18fa4c9362b47464f)">
     <span>4</span>
-    <img src="img/img_2.png"/>
+    <img src="img/SM.jpg"/>
     <div class="info">Station Météo</div>
-    <a href="https://drive.google.com/file/d/1LKgxtx0U4um6UNInOyfrk5sDm7mlujr5/view" target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
+    <a class="btn-voir2"
+       data-title="Station Météo"
+       data-image="img/img_2.png"
+       data-text="Ce projet est une station météo programmée en C, utilisant une carte BluePill basée sur un microcontrôleur STM32. Le design de la station a été conçu avec Altium. <br><br>
+       La station était capable de mesurer des données météorologiques telles que la température, l'humidité et la pression atmosphérique, avec la possibilité d'ajouter d'autres paramètres selon les besoins spécifiques du projet. Les données étaient ensuite affichées sur un écran TFT pour être lues et interprétées par l'utilisateur.<br><br>
+        <i>Vous pouvez retrouver mon rapport en cliquant sur le lien ci-dessous.</i>"
+       data-url="https://drive.google.com/file/d/1LKgxtx0U4um6UNInOyfrk5sDm7mlujr5/view">+ info</a>
   </div>
 
   <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e02d9194aa18fa4c9362b47464f)">
     <span>5</span>
     <img src="img/siteWeb.png"/>
     <div class="info">Site Web type réseau social</div>
-    <a class="btn-voir" data-info="Le projet consistait à créer un site Web en utilisant les langages de programmation PHP, JavaScript, HTML et MariaDB pour la base de données.
+    <a class="btn-voir"
+       data-title="Site Web type réseau social"
+       data-image="img/siteWeb.png"
+       data-text="Le projet consistait à créer un site Web en utilisant les langages de programmation PHP, JavaScript, HTML, CSS et MariaDB pour la base de données.<br><br>
     Le site avait pour vocation d'être une plateforme de réseau social où les utilisateurs pouvaient s'inscrire ou se connecter, recevoir des notifications, rechercher et ajouter des personnes, contacter leurs amis et modifier leur profil."
        style="white-space: pre;text-decoration: none;">+ info</a>
   </div>
@@ -60,43 +84,61 @@
     <span>6</span>
     <img src="img/site2.png"/>
     <div class="info">Ce site web</div>
-    <a class="btn-voir" data-info="Puisqu'un CV ne dit pas tout sur les compétences et le travail d'une personne, j'ai décidé de présenter mon savoir-faire à travers ce site Web, considéré comme un portfolio.
-    Vous pouvez découvrir davantage sur mes compétences et réalisations en parcourant ce site."
-       style="white-space: pre;text-decoration: none;">+ info</a>
+    <a class="btn-voir"
+      data-title="Ce site web"
+      data-image="img/site2.png"
+      data-text="Puisqu'un CV ne révèle pas tout sur les compétences et les réalisations d'une personne, j'ai choisi de présenter mon savoir-faire à travers ce site web. Considérez-le comme mon portfolio.<br><br>
+        Découvrez davantage sur mes compétences et réalisations en parcourant ce site conçu en utilisant les langages de programmation JavaScript, HTML et CSS. Pour le mettre en ligne, j'ai profité de l'hébergement gratuit offert par Github.">+ info</a>
   </div>
 
   <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e029bbd79106e510d13a9a5ec33)">
     <span>7</span>
-    <img src="img/cadessens.PNG"/>
+    <img src="img/cadessens.jpeg"/>
     <div class="info">Cadessens</div>
-    <a href="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link" target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
+    <a class="btn-voir2"
+       data-title="Cadessens"
+       data-image="img/cadessens.jpeg"
+       data-text="Lors de mon stage chez Intraneos Synergy, j'ai travaillé avec le framework Symfony pour développer une application permettant à un coach sportif de suivre ses adhérents.<br><br>
+        <i>Vous pouvez retrouver mon rapport en cliquant sur le lien ci-dessous.</i>"
+       data-url="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link">+ info</a>
   </div>
 
   <div class="box" style="--src: url(https://i.scdn.co/image/ab67616d00001e021d97ca7376f835055f828139)">
     <span>8</span>
     <img src="img/tabInter.png"/>
     <div class="info">Tableau d'intervention</div>
-    <a href="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link" target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
+    <a class="btn-voir2"
+       data-title="Tableau d'intervention"
+       data-image="img/tabInter.png"
+       data-text="Durant mon stage chez Intraneos Synergy, j'ai mis en place un calendrier d'interventions en ligne pour offrir au technicien une meilleure visibilité sur son emploi du temps et j'ai également ajouté plusieurs autres fonctionnalités.<br><br>
+        <i>Vous pouvez retrouver mon rapport en cliquant sur le lien ci-dessous.</i>"
+       data-url="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link">+ info</a>
   </div>
 
   <div class="box" style="--src: url(https://www.udiscovermusic.com/wp-content/uploads/2015/10/Kanye-West-Yeezus.jpg)">
     <span>9</span>
     <img src="img/IA.jpg"/>
     <div class="info">Début de dev IA</div>
-    <a href="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link" target="_blank" class="btn-voir2" style="white-space: pre; text-decoration: none;">+ info</a>
+    <a class="btn-voir2"
+       data-title="Début de dev IA"
+       data-image="img/IA.jpg"
+       data-text="Pendant mon stage chez Intraneos Synergy, j'ai participé à la mise en place de l'Intelligence Artificielle en réalisant diverses requêtes. Cela a permis d'effectuer une étude et de fournir une base de données à l'IA.
+       <br><br>
+        <i>Vous pouvez retrouver mon rapport en cliquant sur le lien ci-dessous.</i>"
+       data-url="https://drive.google.com/file/d/1iIZca8iIPwyIvOCGLnuqqlz3wQ82888I/view?usp=share_link">+ info</a>
   </div>
 
   <div class="controls">
-    <button class="next"><span>Previous album</span>
+    <button1 class="next"><span>Previous album</span>
       <svg viewBox="0 0 448 512" width="100" title="Previous Album">
-        <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path>
+        <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="#03dac6"></path>
       </svg>
-    </button>
-    <button class="prev"><span>Next album</span>
+    </button1>
+    <button1 class="prev"><span>Next album</span>
       <svg viewBox="0 0 448 512" width="100" title="Next Album">
-        <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path>
+        <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="#03dac6"></path>
       </svg>
-    </button>
+    </button1>
   </div>
 </div>
 
@@ -104,6 +146,7 @@
   <script type="module" src="js/projets.js"></script>
 
 <script>
+
   let boxes = document.querySelectorAll('.box');
 
   boxes.forEach((box) => {
@@ -130,14 +173,48 @@
     });
 
     box.addEventListener('click', function(e) {
-      let btnVoir = box.querySelector('.btn-voir');
-      if (btnVoir && e.target.classList.contains('btn-voir')) {
+      let btnVoir = e.target;
+      if (btnVoir.classList.contains('btn-voir')) {
         e.preventDefault();
-        alert(btnVoir.getAttribute('data-info'));
+        let imageUrl = btnVoir.getAttribute('data-image');
+        let text = btnVoir.getAttribute('data-text');
+        let title = btnVoir.getAttribute('data-title');
+        Swal.fire({
+          title: title,
+          html: text,
+          imageUrl: imageUrl,
+          imageWidth: 400,
+          imageHeight: 200,
+          imageAlt: 'Custom image',
+        });
+      }
+
+      let btnVoir2 = e.target;
+      if (btnVoir2.classList.contains('btn-voir2')) {
+        e.preventDefault();
+        let imageUrl = btnVoir2.getAttribute('data-image');
+        let text = btnVoir2.getAttribute('data-text');
+        let title = btnVoir2.getAttribute('data-title');
+        let url = btnVoir2.getAttribute('data-url');
+        Swal.fire({
+          title: title,
+          html: text,
+          imageUrl: imageUrl,
+          imageWidth: 400,
+          imageHeight: 200,
+          imageAlt: 'Custom image',
+          showCancelButton: true,
+          confirmButtonText: 'Voir le rapport',
+          confirmButtonColor: '#3085d6',
+          cancelButtonText: 'OK'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.open(url, '_blank');
+          }
+        });
       }
     });
   });
-
 </script>
 
 </body>

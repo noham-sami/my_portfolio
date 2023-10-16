@@ -31,7 +31,7 @@ body {
   width: 20vmin;
   z-index: 300;
 }
-button {
+button1 {
   height: 48px;
   width: 48px;
   border-radius: 50%;
@@ -47,7 +47,7 @@ button {
   transition: transform 0.1s;
   transform: translate(0, calc(var(--y, 0)));
 }
-button:before {
+button1:before {
   border: 2px solid #03dac6;
   background: linear-gradient(rgba(204,204,204,0.65), #000) #000;
   content: '';
@@ -60,16 +60,16 @@ button:before {
   width: 80%;
   border-radius: 50%;
 }
-button:active:before {
+button1:active:before {
   background: linear-gradient(#000, rgba(204,204,204,0.65)) #000;
 }
-button:nth-of-type(1) {
+button1:nth-of-type(1) {
   right: 100%;
 }
-button:nth-of-type(2) {
+button1:nth-of-type(2) {
   left: 100%;
 }
-button span {
+button1 span {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -80,10 +80,10 @@ button span {
   white-space: nowrap;
   border-width: 0;
 }
-button:hover {
+button1:hover {
   --y: -5%;
 }
-button svg {
+button1 svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,7 +91,7 @@ button svg {
   height: 30%;
   fill: #e6e6e6;
 }
-button:nth-of-type(1) svg {
+button1:nth-of-type(1) svg {
   transform: translate(-50%, -50%) rotate(180deg) translate(2%, 0);
 }
 .scroll-icon {
@@ -202,14 +202,14 @@ h1 {
   z-index: 1;
 }
 
-button path {
+button1 path {
   fill: #03dac6;
 }
 
 .info {
   font-size: 80%;
   position: absolute;
-  background: linear-gradient( 270deg, rgb(60, 200, 100), #03dac6 );
+  background: linear-gradient( 270deg, #03dac6, #1e1f26 );
   padding: 10px;
   color: white;
 }
@@ -265,4 +265,8 @@ button path {
   cursor: pointer;
   border-color: #ff0266;
   color: #ff0266;
+}
+.swal2-html-container {
+  text-align: justify !important;
+  hyphens: auto;
 }
