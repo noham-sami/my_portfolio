@@ -220,7 +220,7 @@ button1 path {
 
 
 .btn-voir, .btn-voir2 {
-  display:none;
+  /*display:none;*/
   font-size: 75%;
   position: absolute;
   top: 85%;
@@ -250,8 +250,7 @@ button1 path {
   left: 15%;
   background-color: #1e1f26;
   color: #03dac6;
-  border: solid 2px;
-  border-color: #03dac6;
+  border: solid 2px #03dac6;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
   transform: translate(-50%, -50%);
   border-radius: 5px;

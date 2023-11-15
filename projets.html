@@ -150,6 +150,14 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
   let boxes = document.querySelectorAll('.box');
 
   boxes.forEach((box) => {
+    let btnVoir = box.querySelector('.btn-voir');
+    let btnVoir2 = box.querySelector('.btn-voir2');
+    if (btnVoir) {
+      btnVoir.style.display = 'block';
+    }
+    if (btnVoir2) {
+      btnVoir2.style.display = 'block';
+    }
     box.addEventListener('mouseover', function() {
       let btnVoir = box.querySelector('.btn-voir');
       let btnVoir2 = box.querySelector('.btn-voir2');
@@ -161,6 +169,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
       }
     });
 
+    /**
     box.addEventListener('mouseout', function() {
       let btnVoir = box.querySelector('.btn-voir');
       let btnVoir2 = box.querySelector('.btn-voir2');
@@ -171,6 +180,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
         btnVoir2.style.display = 'none';
       }
     });
+     **/
 
     box.addEventListener('click', function(e) {
       let btnVoir = e.target;

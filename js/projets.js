@@ -198,6 +198,8 @@ document.addEventListener('keydown', event => {
   if (event.code === 'ArrowLeft' || event.code === 'KeyA') NEXT();
   if (event.code === 'ArrowRight' || event.code === 'KeyD') PREV();
 });
+// Déclencher la lecture automatique du carrousel
+// LOOP_HEAD.play();
 
 // document.querySelector('.boxes').addEventListener('click', e => {
 //   const BOX = e.target.closest('.box');
