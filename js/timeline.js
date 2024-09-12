@@ -5,7 +5,6 @@ $(function(){
 		if ($('.timeline-content').hasClass('js--fadeInLeft')) {
 			$('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
 		}
-
 		sr.reveal('.js--fadeInRight', {
 			origin: 'right',
 			distance: '300px',
@@ -13,7 +12,6 @@ $(function(){
 			duration: 800,
 			reset: true
 		});
-
 	} else {
 		sr.reveal('.js--fadeInLeft', {
 			origin: 'left',

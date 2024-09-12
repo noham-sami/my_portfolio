@@ -25,9 +25,9 @@ header {
   color: #03dac6;
   padding: 30px 0;
 }
-.button-image-wrapper {
-  display: flex;
-  align-items: center;
+.button-image-wrapper img {
+  max-width: 100%; /* L'image ne dépassera jamais le cadre */
+  height: auto;
 }
 .timeline {
   position: relative;
@@ -74,7 +74,7 @@ header {
 .timeline-content {
   position: relative;
   width: 45%;
-  padding: 10px 30px;
+  padding: 20px;
   border-radius: 4px;
   background: #f5f5f5;
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
@@ -195,8 +195,8 @@ blockquote {
 .btn-retour{
   text-decoration: none;
   font-size: 100%;
-  position: absolute;
-  top: 7%;
+  position: fixed;
+  top: 20px;
   left: 15%;
   background-color: #1e1f26;
   color: #03dac6;
@@ -216,4 +216,31 @@ blockquote {
   border-color: #ff0266;
   color: #ff0266;
   background-color: transparent;
+}
+/* Style pour les grands écrans */
+@media screen and (min-width: 768px) {
+  .timeline::before {
+    left: 50%;
+  }
+  .timeline .timeline-img {
+    left: 50%;
+  }
+  .timeline .timeline-content {
+    max-width: 45%;
+    width: auto;
+    margin-left: 0;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+  }
+  .timeline-item:nth-child(odd) .timeline-content {
+    float: left;
+  }
+  .timeline .timeline-content::after {
+    right: -15px;
+  }
+  .timeline-item:nth-child(even) .timeline-content::after {
+    left: -15px;
+    right: auto;
+  }
 }
