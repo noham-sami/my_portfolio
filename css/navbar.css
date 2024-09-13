@@ -295,22 +295,6 @@ button:hover {
     border-color: #ff0266;
 }**/
 
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 100;
-}
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
 
 .popup {
     margin: 70px auto;
@@ -319,8 +303,15 @@ button:hover {
     border-radius: 5px;
     width: 30%;
     height: 75%;
+    max-width: 800px;
+    max-height: 80vh;
     position: relative;
-    transition: all 5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .popup h2 {
@@ -328,6 +319,7 @@ button:hover {
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
     position: absolute;
     top: 5px;
@@ -338,6 +330,7 @@ button:hover {
     text-decoration: none;
     color: #03dac6;
 }
+
 .popup .close:hover {
     color: #ff0266;
 }
@@ -351,4 +344,35 @@ button:hover {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 90%;
+        height: 90vh;
+        padding: 15px;
+    }
+
+    .content-frame {
+        height: 90vh;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
 }

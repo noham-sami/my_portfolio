@@ -359,5 +359,43 @@ body {
   font-family: "Jost", sans-serif;
   transition: 0.3s;
 }
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 100%; /* La carte prend toute la largeur de l'écran */
+    height: auto; /* Ajuste automatiquement la hauteur */
+  }
 
+  .card-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-header {
+    height: 150px;
+  }
+
+  .card-cover {
+    height: 120px;
+    top: -40px;
+  }
+
+  .card-buttons button {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-contact {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .contact-me {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+}
 
