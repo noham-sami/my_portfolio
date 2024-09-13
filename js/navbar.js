@@ -3,6 +3,7 @@ window.onload = function () {
         selector: ".background"
     });
 };
+
 const particles = Particles.init({
     selector: ".background",
     color: ["#03dac6", "#ff0266", "#000000"],
@@ -12,14 +13,21 @@ const particles = Particles.init({
         {
             breakpoint: 768,
             options: {
-                color: ["#faebd7", "#03dac6", "#ff0266"],
-                maxParticles: 43,
-                connectParticles: false
+                color: ["#03dac6", "#ff0266", "#faebd7"],
+                maxParticles: 100, // Augmenter légèrement le nombre sur mobile
+                connectParticles: true // Activer la connexion entre particules
+            }
+        },
+        {
+            breakpoint: 480,
+            options: {
+                maxParticles: 70, // Un peu plus pour les très petits écrans
+                connectParticles: true, // Garder les connexions
+                color: ["#ff0266"]
             }
         }
     ]
 });
-
 class NavigationPage {
     constructor() {
         this.currentId = null;
@@ -125,5 +133,4 @@ class NavigationPage {
         $(".nav-tab-slider").css("left", left);
     }
 }
-
 new NavigationPage();

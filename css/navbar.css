@@ -171,6 +171,19 @@ h3.span.loader {
     letter-spacing: -0.03em;
 }
 
+@media screen and (max-width: 768px) {
+    .nav-tab {
+        font-size: 4vw; /* Augmente la taille du texte pour petits écrans */
+        letter-spacing: 0.2rem; /* Ajuste l'espacement des lettres si nécessaire */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-tab {
+        font-size: 3vw; /* Encore plus grand pour les écrans très petits */
+        letter-spacing: 0.1rem;
+    }
+}
 
 @-webkit-keyframes loading {
     to {
@@ -376,3 +389,4 @@ button:hover {
     visibility: visible;
     opacity: 1;
 }
+
