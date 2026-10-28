@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#0d2743"/></linearGradient>
+    <radialGradient id="g1"><stop stop-color="#2f80ed" stop-opacity=".42"/><stop offset="1" stop-color="#2f80ed" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2"><stop stop-color="#65b5ff" stop-opacity=".24"/><stop offset="1" stop-color="#65b5ff" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0V54" fill="none" stroke="#79bfff" stroke-opacity=".06"/></pattern>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect width="1200" height="700" fill="url(#grid)"/>
+  <circle cx="250" cy="175" r="300" fill="url(#g1)"/>
+  <circle cx="930" cy="535" r="360" fill="url(#g2)"/>
+  <path d="M84 520C280 420 386 485 548 382s291-84 561-238" fill="none" stroke="#5ba8f5" stroke-opacity=".28" stroke-width="3"/>
+  <circle cx="330" cy="451" r="8" fill="#8ec9ff"/><circle cx="704" cy="304" r="8" fill="#8ec9ff"/><circle cx="1025" cy="188" r="8" fill="#8ec9ff"/>
+  <text x="82" y="110" fill="#b9ddff" font-family="system-ui,sans-serif" font-size="28" font-weight="700" letter-spacing="5">NOHAM SAMI</text>
+  <text x="84" y="151" fill="#6d8baa" font-family="system-ui,sans-serif" font-size="18" letter-spacing="3">PORTFOLIO • VISUEL</text>
+</svg>

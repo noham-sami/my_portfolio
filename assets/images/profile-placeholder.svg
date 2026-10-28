@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0E1F38"/><stop offset="1" stop-color="#060D19"/></linearGradient>
+    <radialGradient id="gl" cx=".72" cy=".25" r=".6"><stop stop-color="#3B82F6" stop-opacity=".35"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tx" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#9CC3FF"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#gl)"/>
+  <g fill="none" stroke="#2A4A75" stroke-opacity=".55">
+    <path d="M0 470c140-60 270-70 400-30s260 40 400-20"/>
+    <path d="M0 510c150-55 280-58 405-22s250 36 395-18"/>
+  </g>
+  <circle cx="400" cy="280" r="128" fill="none" stroke="#3B82F6" stroke-opacity=".45" stroke-width="2"/>
+  <text x="400" y="318" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="112" font-weight="800" fill="url(#tx)" letter-spacing="4">NS</text>
+</svg>
